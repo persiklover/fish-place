@@ -1,18 +1,15 @@
 .button {
-	background: #14489D;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: var(--accent-color);
 	border: none;
 	border-radius: .7rem;
 	padding: .9rem 2.5rem;
 
 	font-family: 'TT Commons';
-	font-style: normal;
+	color: #E7ECF3;
 	font-weight: 500;
 	font-size: 1.6rem;
-	/* or 22px */
-
-	color: #E7ECF3;
-	display: flex;
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.01em;
 }
