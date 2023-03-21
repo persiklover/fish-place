@@ -1,0 +1,40 @@
+@import "../../sass/mixins";
+
+.header {
+	padding: 1.2rem 0;
+
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: var(--primary-color);
+
+	@include sm {
+		display: none;
+	}
+
+	&-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav {
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			gap: 3.5rem;
+		}
+	}
+
+	&-phone {
+		display: flex;
+		align-items: center;
+		gap: .25em;
+		padding: .7rem .4rem;
+
+		color: #14489D;
+		font-weight: 700;
+	}
+}
