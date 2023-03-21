@@ -33,7 +33,6 @@ export default function App() {
 								/>
 
 									<div>
-									{/* <div className="section1__form_first-part"> */}
 										<Input
 											label='Дата'
 											placeholder='Выберите дату'
