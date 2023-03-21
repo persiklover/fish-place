@@ -1,0 +1,45 @@
+@import "../../sass/mixins";
+
+.input {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .8rem;
+
+    @include sm {
+      gap: 1.4rem;
+    }
+
+    label {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 140%;
+
+      color: rgba(10, 38, 83, 0.64);
+    }
+
+    input {
+      display: flex;
+      height: 4.8rem;
+      width: 100%;
+      padding: 1.4rem;
+
+      background-color: rgba(55, 110, 164, 0.06);
+      border-radius: 1rem;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        font-family: 'TT Commons';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+
+        color: rgba(10, 38, 83, 0.3);
+      }
+    }
+  }
+}
