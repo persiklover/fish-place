@@ -1,8 +1,8 @@
 import Header from './components/Header';
-import Input from './components/Input';
 
 import './sass/style.scss';
 import Button from './UI/Button';
+import Input from './UI/Input';
 
 export default function App() {
 	return (
