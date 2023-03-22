@@ -1,0 +1,81 @@
+@import "../../sass/mixins";
+
+.static-tooltip {
+  display: flex;
+  gap: .6rem;
+  position: relative;
+  width: fit-content;
+  position: absolute;
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 140%;
+    width: 102%;
+    // min-width: 102%;
+    width: 26.5rem;
+
+    color: #0A2653;
+  }
+
+  &__tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 24.9rem;
+    min-width: 24.9rem;
+    padding: 2.2rem 2.4rem;
+    background-color: #fff;
+
+    box-shadow: 0px 9px 111px rgba(0, 0, 0, 0.05), 0px 1.01364px 28.7341px rgba(0, 0, 0, 0.0308023);
+    border-radius: 1.5rem;
+
+    ul {
+      margin:  0;
+      padding: 0;
+
+      display: flex;
+      gap: 2.4rem;
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          &:first-of-type {
+            list-style: none;
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 110%;
+
+            color: #14489D;
+          }
+
+          &:last-of-type {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 140%;
+    
+            color: rgba(10, 38, 83, 0.3);
+          }
+        }
+      }
+    }
+  }
+
+  &--top {
+    .static-tooltip__tooltip {
+      bottom: 130%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--right {
+    .static-tooltip__tooltip {
+      top: 50%;
+      left: 130%;
+      transform: translateY(-50%);
+    }
+  }
+}

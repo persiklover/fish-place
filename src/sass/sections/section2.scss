@@ -1,0 +1,92 @@
+.section2 {
+  position: relative;
+  padding-top: 20.8rem;
+  padding-bottom: 11.5rem;
+
+  height: fit-content;
+
+  &__gradient-map {
+    position: absolute;
+    top: 37.5%;
+    transform: translateY(-50%);
+    left: 4.1rem;
+
+    z-index: -1;
+
+    width: 118.4rem;
+    height: 53.3rem;
+    user-select: none;
+  }
+
+  @include sm {
+    padding-top: 43.9rem;
+    padding-bottom: 6.6rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    h2 {
+      width: 39.8rem;
+
+      @include sm {
+        width: 30rem;
+      }
+    }
+
+    span {
+      width: 33.8rem;
+    }
+  }
+
+  &__total-list {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 8.8rem;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        gap: .8rem;
+
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 140%;
+        color: #14489D;
+
+        span {
+          width: 5.6rem;
+          min-width: 5.6rem;
+          font-weight: 700;
+          font-size: 3.2rem;
+          line-height: 110%;
+    
+          text-align: right;
+        }
+      }
+    }
+
+  }
+
+  &__button-container {
+    margin-top: 5.6rem;
+
+    @include sm {
+      margin-top: 3.9rem;
+    }
+  }
+}

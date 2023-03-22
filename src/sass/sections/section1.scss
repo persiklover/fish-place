@@ -41,6 +41,7 @@
       font-weight: 700;
       font-size: 5.5rem;
       line-height: 110%;
+      width: 60rem;
 
       color: white;
 
@@ -51,9 +52,11 @@
 
     span {
       color: rgba(255, 255, 255, 0.7);
+      width: 50rem;
 
       @include sm {
         font-size: 1.6rem;
+        width: 30rem;
       }
     }
   }

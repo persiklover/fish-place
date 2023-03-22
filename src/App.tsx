@@ -3,6 +3,7 @@ import SearchResult from './components/SearchResult';
 import Button from './UI/Button';
 import Input from './UI/Input';
 import './sass/style.scss';
+import StaticTooltip from './UI/StaticTooltip/StaticTooltip';
 
 export default function App() {
 	return (
@@ -32,39 +33,147 @@ export default function App() {
 										label='Начните вводить название'
 									/>
 
-										<div>
-											<Input
-												label='Дата'
-												placeholder='Выберите дату'
-											/>
+									<div>
+										<Input
+											label='Дата'
+											placeholder='Выберите дату'
+										/>
 
-											<Input
-												label='Рыбопродукция'
-												placeholder='Выберите тип'
-											/>
-										</div>
+										<Input
+											label='Рыбопродукция'
+											placeholder='Выберите тип'
+										/>
+									</div>
 
-										<div>
-											<Input
-												label='Температурный режим'
-												placeholder='Укажите режим'
-											/>
+									<div>
+										<Input
+											label='Температурный режим'
+											placeholder='Укажите режим'
+										/>
 
-											<Input
-												label='Масса нетто, т'
-												placeholder='Введите массу'
-											/>
-										</div>
+										<Input
+											label='Масса нетто, т'
+											placeholder='Введите массу'
+										/>
+									</div>
 
-										<Button style={{marginTop: '1rem'}}>
-											Показать склады
-										</Button>
+									<Button style={{ marginTop: '1rem' }}>
+										Показать склады
+									</Button>
 								</div>
 							</div>
 
 						</div>
 					</div>
 				</section>
+
+				<section className="section2">
+					<div className="container">
+
+						<div className="section2__inner">
+
+							<div className="hide-sm">
+
+								<StaticTooltip
+									mainTitle='Архангельск'
+									firstTitle='25'
+									firstSubtitle='Складов'
+									secondTitle='20%'
+									secondSubtitle='Ср. загруженность'
+									tooltipPosition='right'
+									style={{ top: '1rem', left: '32.44rem' }}
+								/>
+
+								<StaticTooltip
+									onlyDot
+									style={{ top: '2rem', left: '66.8rem' }}
+								/>
+
+								<StaticTooltip
+									onlyDot
+									style={{ top: '10rem', left: '81rem' }}
+								/>
+
+								<StaticTooltip
+									onlyDot
+									style={{ top: '12.6rem', left: '97rem' }}
+								/>
+
+								<StaticTooltip
+									mainTitle='Петропавловск-Камчатский'
+									firstTitle='25'
+									firstSubtitle='Складов'
+									secondTitle='20%'
+									secondSubtitle='Ср. загруженность'
+									tooltipPosition='top'
+									style={{ top: '9.1rem', right: '10.7rem' }}
+								/>
+
+								<StaticTooltip
+									mainTitle='Владивосток'
+									firstTitle='25'
+									firstSubtitle='Складов'
+									secondTitle='20%'
+									secondSubtitle='Ср. загруженность'
+									tooltipPosition='top'
+									style={{ top: '34.7rem', right: '22.8rem' }}
+								/>
+
+								<StaticTooltip
+									onlyDot
+									style={{ top: '25.3rem', left: '70.7rem' }}
+								/>
+
+								<StaticTooltip
+									mainTitle='Новосибирск'
+									firstTitle='25'
+									firstSubtitle='Складов'
+									secondTitle='20%'
+									secondSubtitle='Ср. загруженность'
+									tooltipPosition='top'
+									style={{ top: '30rem', left: '54rem' }}
+								/>
+							</div>
+
+							<img
+								className='section2__gradient-map'
+								src="/src/img/svg/gradient-map.svg"
+							/>
+
+							<div className="section2__title-container">
+								<h2 className='section-title'>
+									Работаем <br /> с большинством складов России
+								</h2>
+
+								<span className='section-subtitle'>
+									Расширяем географию присутствия
+								</span>
+							</div>
+
+							<div className="section2__total-list">
+								<ul>
+									<li>
+										<span>130</span>
+										Складов подключено
+									</li>
+
+									<li>
+										<span>20</span>
+										Городов России
+									</li>
+								</ul>
+							</div>
+
+							<div className="section2__button-container">
+								<Button>
+									Подобрать склад
+								</Button>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
 				<section className="section3">
 					<div className="container">
 						<div className="section3-inner">
