@@ -1,0 +1,95 @@
+.section5 {
+	padding: 8rem 0 15rem;
+
+	@include sm {
+		padding: 6.6rem 0;
+	}
+
+	.section-title {
+		margin-bottom: 1.5rem;
+	}
+
+	.section-subtitle {
+		opacity: 0.5;
+	}
+
+	&-content {
+		margin-top: 5.5rem;
+		display: flex;
+		justify-content: space-between;
+		gap: 2.5rem;
+
+		@include sm {
+			margin-top: 3rem;
+			flex-direction: column;
+		}
+	}
+
+	&-card {
+		max-width: 55rem;
+		width: 100%;
+		background: white;
+		box-shadow:
+			0 .9rem 11.1rem rgba(0, 0, 0, 0.05),
+			0 .1rem 2.8rem rgba(0, 0, 0, 0.0308023);
+		border-radius: 1.5rem;
+		padding: 4rem;
+
+		@include sm {
+			max-width: unset;
+			padding: 4rem 2.5rem;
+		}
+
+		h3 {
+			margin: 0;
+			margin-bottom: 3rem;
+
+			font-size: 2.5rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 110%;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+
+			.icon-wrapper {
+				flex-shrink: 0;
+				width:  4.4rem;
+				height: 4.4rem;
+				background: rgba(255, 6, 6, 0.1);
+				padding: 1rem;
+				border-radius: 1rem;
+
+				&.check {
+					background: rgba(74, 206, 27, 0.1);
+				}
+			}
+
+			li {
+				display: flex;
+				align-items: center;
+				gap: 1.8rem;
+
+				font-size: 1.4rem;
+				font-weight: 400;
+				line-height: 140%;
+
+				@include sm {
+					font-size: 1.2rem;
+				}
+
+				img {
+					width:  2.4rem;
+					height: 2.4rem;
+				}
+			}
+		}
+	}
+}

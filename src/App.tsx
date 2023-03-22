@@ -168,6 +168,85 @@ export default function App() {
 						</div>
 					</div>
 				</section>
+				<section className="section5">
+					<div className="container">
+						<div className="section5-inner">
+							<h2 className="section-title">Почему клиенты пользуются FishPlace?</h2>
+							<p className="section-subtitle">
+								Fishplace экономит время и деньги компаний, делая рутинную работу за своих клиентов
+							</p>
+							<div className="section5-content">
+								<div className="section5-card">
+									<h3>Стандартный механизм</h3>
+									<ul>
+										<li>
+											<div className="icon-wrapper">
+												<img src="/src/img/cross.svg" alt="" />
+											</div>
+											Поиск места на складах вручную: по телефону
+											и в интернете
+										</li>
+										<li>
+											<div className="icon-wrapper">
+												<img src="/src/img/cross.svg" alt="" />
+											</div>
+											Осуществление звонков на каждый склад для
+											уточнения информации о свободном месте или
+											времени на отгрузку
+										</li>
+										<li>
+											<div className="icon-wrapper">
+												<img src="/src/img/cross.svg" alt="" />
+											</div>
+											Согласование каждой заявки на отгрузку, передачу,
+											хранение рыбной продукции - по почте и телефону
+										</li>
+										<li>
+											<div className="icon-wrapper">
+												<img src="/src/img/cross.svg" alt="" />
+											</div>
+											Обмен документами осуществляется по электронной
+											почте, нарочно/курьером или почтой России
+										</li>
+									</ul>
+								</div>
+								<div className="section5-card">
+									<h3>Работа с Fishplace</h3>
+									<ul>
+										<li>
+											<div className="icon-wrapper check">
+												<img src="/src/img/check.svg" alt="" />
+											</div>
+											Автоматическая выдача списка всех действующих
+											складов, согласно заданным параметрам
+										</li>
+										<li>
+											<div className="icon-wrapper check">
+												<img src="/src/img/check.svg" alt="" />
+											</div>
+											Получение актуальной информации о свободном
+											месте или времени на отгрузку с каждого склада
+											в режиме on-line
+										</li>
+										<li>
+											<div className="icon-wrapper check">
+												<img src="/src/img/check.svg" alt="" />
+											</div>
+											Оформление on-line заявки на отгрузку, передачу,
+											хранение рыбной продукции в 3 клика
+										</li>
+										<li>
+											<div className="icon-wrapper check">
+												<img src="/src/img/check.svg" alt="" />
+											</div>
+											Электронный документооборот с цифровой подписью
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 		</>
 	);
