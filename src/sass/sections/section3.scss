@@ -1,4 +1,75 @@
 .section3 {
 	background: var(--accent-color);
+	padding: 18rem 0;
 	color: white;
+
+	display: flex;
+	align-items: center;
+
+	@include sm {
+		padding: 6.6rem 0 11rem;
+	}
+
+	&-inner {
+		display: flex;
+		align-items: center;
+		gap: 7rem;
+
+		@include sm {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&-examples {
+		display: flex;
+		flex-direction: column;
+		gap: 1.7rem;
+
+		pointer-events: none;
+
+		@include sm {
+			.search-result {
+				padding: 1.5rem 2.2rem;
+				gap: 1.6rem;
+
+				&-img {
+					width:  6rem;
+					height: 6rem;
+				}
+
+				dl {
+					gap: 1.5rem;
+
+					dt {
+						margin-bottom: .2rem;
+						font-size: 1.2rem;
+					}
+
+					dd {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+
+	.section-title {
+		margin-bottom: 2.4rem;
+		max-width: 43rem;
+
+		@include sm {
+			margin-bottom: 1.6rem;
+			max-width: unset;
+		}
+	}
+
+	.section-subtitle {
+		max-width: 30rem;
+		color: rgba(255, 255, 255, 0.7);
+
+		@include sm {
+			max-width: unset;
+		}
+	}
 }

@@ -7,6 +7,14 @@ body {
 
 main {
 	overflow-x: hidden;
+
+	> section {
+		height: 100vh;
+
+		@include sm {
+			height: unset;
+		}
+	}
 }
 
 .sm-only {
@@ -30,6 +38,10 @@ main {
 		font-size: 4.1rem;
 		font-weight: 700;
 		line-height: 110%;
+
+		@include sm {
+			font-size: 2.7rem;
+		}
 	}
 
 	&-subtitle {
@@ -38,5 +50,9 @@ main {
 		font-size: 2rem;
 		font-weight: 400;
 		line-height: 140%;
+
+		@include sm {
+			font-size: 1.6rem;
+		}
 	}
 }

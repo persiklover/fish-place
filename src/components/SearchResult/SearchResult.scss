@@ -1,0 +1,54 @@
+.search-result {
+	display: flex;
+	align-items: center;
+	padding: 2rem 2.8rem;
+	gap: 2.4rem;
+	background: white;
+	box-shadow:
+		0 1.7rem 11.8rem rgba(0, 0, 0, 0.08),
+		0 .4rem 7.3rem rgba(0, 0, 0, 0.0566089);
+	border-radius: 1.5rem;
+
+	color: var(--primary-color);
+
+	&.disabled {
+		opacity: 0.5;
+		filter: blur(1px);
+	}
+
+	&-img {
+		width:  7.8rem;
+		height: 7.8rem;
+	}
+
+	dl {
+		flex-grow: 1;
+		display: flex;
+		// justify-content: space-around;
+		align-items: flex-start;
+		gap: 2rem;
+
+		dt {
+			margin-bottom: .4rem;
+
+			font-weight: 400;
+			font-size: 1.4rem;
+			line-height: 140%;
+			color: rgba(10, 38, 83, 0.64);
+			white-space: nowrap;
+		}
+
+		dd {
+			margin: 0;
+
+			font-weight: 700;
+			font-size: 1.6rem;
+			line-height: 120%;
+			color: var(--accent-color);
+		}
+	}
+
+	.button {
+		// margin-left: auto;
+	}
+}
