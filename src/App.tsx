@@ -105,6 +105,69 @@ export default function App() {
 						</div>
 					</div>
 				</section>
+				<section className="section4">
+					<div className="container">
+						<div className="section4-inner">
+							<h2 className="section-title section4-title">
+								Экономим Ваше время,<br/>
+								автоматизируя работу со складом
+							</h2>
+
+							<ul className="section4-applications">
+								<li>
+									<div className="section4-card">
+										<div className="section4-card-icon">
+											<img src="/src/img/application1.svg" alt="" />
+										</div>
+										<h3>Заявка на хранение</h3>
+										<p>Разместить свою рыбопродукцию на&nbsp;складе</p>
+										<Button variant="pale">Создать заявку</Button>
+									</div>
+								</li>
+								<li>
+									<div className="section4-card">
+										<div className="section4-card-icon">
+											<img src="/src/img/application2.svg" alt="" />
+										</div>
+										<h3>Заявка на передачу</h3>
+										<p>Передать рыбопродукцию покупателю без смены склада</p>
+										<Button variant="pale">Создать заявку</Button>
+									</div>
+								</li>
+								<li>
+									<div className="section4-card">
+										<div className="section4-card-icon">
+											<img src="/src/img/application3.svg" alt="" />
+										</div>
+										<h3>Заявка на отгрузку</h3>
+										<p>Записаться на погрузку рыбопродукции со склада на транспорт</p>
+										<Button variant="pale">Создать заявку</Button>
+									</div>
+								</li>
+								<li>
+									<div className="section4-card">
+										<div className="section4-card-icon">
+											<img src="/src/img/application4.svg" alt="" />
+										</div>
+										<h3>Заявка на договор</h3>
+										<p>Заключить договор хранения со складом</p>
+										<Button variant="pale">Создать заявку</Button>
+									</div>
+								</li>
+								<li>
+									<div className="section4-card">
+										<div className="section4-card-icon">
+											<img src="/src/img/application5.svg" alt="" />
+										</div>
+										<h3>Заявка на&nbsp;дополнительные услуги</h3>
+										<p>Решить проблему с рыбопродукцией</p>
+										<Button variant="pale">Создать заявку</Button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</main>
 		</>
 	);
